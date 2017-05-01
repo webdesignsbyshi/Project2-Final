@@ -14,6 +14,7 @@ html,
 body {
   min-height: 100%;
   height: 100%;
+  background: #fafaff;
 }
 
 #top-image {
@@ -37,7 +38,7 @@ body {
 }
 
 .head-lead{
-  color: black;
+  color: #d5d920;
   text-shadow: none;
   text-align: center;
   font-size: 30px;
@@ -107,7 +108,7 @@ nav.navbar {
 }
 
 li.active{
-  color: #bcbf20;
+  color: #fafaff;
 }
 
 nav a {
@@ -281,8 +282,9 @@ nav {
 
 .his-container{
   width: 1200px;
-  max-height: 100%;
   margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .his-head{
@@ -295,7 +297,7 @@ nav {
   text-align: center;
   font-size: 17.5px;
   line-height: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   padding-top: 10px;
 }
 
@@ -308,6 +310,7 @@ nav {
 .his-title{
   font-family: "font1";
   font-size: 23px;
+  padding-top: 20px;
 }
 
 /*Food*/
@@ -334,7 +337,6 @@ nav {
 
 .breakfast{
   width: 100%;
-  max-height: 100%;
 }
 
 .breakfast-in{
@@ -351,7 +353,7 @@ nav {
 
 .food-main-head{
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   font-family: "font1";
 }
 
@@ -370,10 +372,10 @@ nav {
   line-height: 23px;
 }
 
+
 /*Music*/
 .music{
   width: 1200px;
-  max-height: 100%;
   margin: 0 auto;
 }
 
@@ -395,10 +397,29 @@ nav {
 .music-head{
   font-size: 23px;
   font-family: "font1";
+  padding-left: 15px;
 }
 
 .music-desc{
   font-family: "font2";
   font-size: 15.5px;
   line-height: 23px;
+}
+
+.space{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*Footer*/
+footer{
+  height: 40px;
+  width: 100%;
+  background: #d5d920;
+}
+
+.foot-txt{
+  text-align: center;
+  font-family: "font2";
+  padding-top: 10px;
 }

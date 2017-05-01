@@ -118,6 +118,8 @@ sr.reveal('.festival');
 sr.reveal('.ox');
 sr.reveal('.rice');
 sr.reveal('.curry');
+sr.reveal('.dance1');
+sr.reveal('.dance2');
 sr.reveal('.rock1');
 sr.reveal('.rock2');
 sr.reveal('.men1');
