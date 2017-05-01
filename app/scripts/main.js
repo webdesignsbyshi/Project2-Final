@@ -1,11 +1,11 @@
 
 $(document).ready(function() {
-  var movementStrength = 100;
+  var movementStrength = 50;
   var height = movementStrength / $(window).height();
   var width = movementStrength / $(window).width();
 
   $('#top-image').mousemove(function(e){
-    var pageX = e.pageX - ($(window).width() / 2);
+    var pageX = e.pageX - ($(window).width() / 1);
     var pageY = e.pageY - ($(window).height() / 2);
     var newvalueX = width * pageX * -1 - 50;
     var newvalueY = height * pageY * -1 - 100;
