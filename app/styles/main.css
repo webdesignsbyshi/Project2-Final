@@ -1,0 +1,404 @@
+/*Fonts*/
+@font-face{
+    font-family: "font1";
+    src: url("../fonts/Montserrat.otf");
+}
+
+@font-face{
+    font-family: "font2";
+    src: url("../fonts/PlayfairDisplay.otf");
+}
+
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+#top-image {
+  background: url("../images/ja.jpg");
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+  min-height: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: calc(100% + 50px);
+}
+
+.title{
+  color: #ffffff;
+  font-size: 75px;
+  text-transform: uppercase;
+  font-family: "font1";
+  text-align: center;
+}
+
+.head-lead{
+  color: black;
+  text-shadow: none;
+  text-align: center;
+  font-size: 30px;
+  font-family: "font2";
+}
+
+.lead{
+  font-family: "font1";
+  margin-top: 250px;
+}
+
+#top-image {
+  padding: 175px; //to allow for shrinking nav - set to 100px if nav doesnst shrink
+  color: #ffffff;
+  text-shadow: 2px 2px #262626;
+}
+
+.section-2,
+.section-3,
+.section-4 {
+  z-index: 1;
+  position: relative;
+  padding: 100px;
+  min-height: 100%;
+  height: auto;
+  background-color: #fffff;
+  h1 {
+    color: #373a3c;
+  }
+  //box-shadow: 0px 10px 10px #373a3c inset;
+}
+
+.section-3 {
+  background: linear-gradient(to top right, #ffa30f, #ffe70f);
+  /* Standard syntax */
+  h1 {
+    color: #ffffff;
+  }
+  color: #ffffff;
+}
+
+.section-4 {
+  h1 {
+    color: #ffffff;
+  }
+  color: #ffffff;
+  text-shadow: 2px 2px #262626;
+  overflow: hidden;
+}
+
+.video-txt{
+  font-family: "font2";
+  text-shadow: none;
+  color: black;
+}
+
+/*========================================
+  Shrinking Nav example
+  ========================================*/
+
+nav.navbar {
+  min-height: 75px;
+}
+
+.navbar-default {
+  background-color: #d5d920;
+}
+
+li.active{
+  color: #bcbf20;
+}
+
+nav a {
+  padding-top: 27px !important;
+  padding-bottom: 27px !important;
+  font-size: 18px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-family: "font2";
+}
+
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+
+nav .nav.navbar-nav{
+  max-width: 100%;
+  margin-left: 450px;
+}
+
+nav.navbar.shrink {
+  min-height: 50px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+nav.shrink a {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  font-size: 15px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}argin
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}
+
+nav {
+  // Animation
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+
+/*==============================
+  Slider
+  ==============================*/
+
+.inner {
+  height: 500px;
+  background-image: url("../images/bird.jpg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.left {
+  background-image: url("../images/bird.jpg");
+  width: 45%;
+  height: 500px;
+  background-size: cover;
+  background-position: left;
+  filter: saturate(8);
+  max-width: 100% !important;
+}
+
+.line {
+  width: 2px;
+  border: 2px solid #ffa30f;
+  position: absolute;
+  height: 500px;
+  z-index: 9999;
+  margin-left: 42%;
+}
+
+
+/*===================================
+  Fullscreen video loop
+  ===================================*/
+
+
+/* The only rule that matters */
+
+#video-background {
+  /*  making the video fullscreen  */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  top: 0;
+}
+
+
+/*=========================================
+  SVG Animation
+  =========================================*/
+
+.path {
+  opacity: 0;
+}
+
+.path.visible {
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
+  animation: dash 7s linear forwards;
+  opacity: 1;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.slanted {
+  background-color: #ff2e66;
+  color: #ffffff;
+  h1 {
+    color: #ffffff;
+  }
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.slanted:after {
+  background: #ffffff;
+  bottom: -40px;
+  content: "";
+  display: block;
+  height: 120px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-1deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.slanted:before {
+  background: #000000;
+  bottom: -30px;
+  content: "";
+  display: block;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(1.5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+/*History*/
+.his-img{
+  height: 550px;
+  width: 100%;
+}
+
+.his-img2{
+  height: 400px;
+  width: 100%;
+}
+
+.his-container{
+  width: 1200px;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.his-head{
+  font-family: "font1";
+  text-align: center;
+}
+
+.his-head-txt{
+  font-family: "font2";
+  text-align: center;
+  font-size: 17.5px;
+  line-height: 30px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.his-txt{
+  font-family: "font2";
+  font-size: 15.5px;
+  line-height: 23px;
+}
+
+.his-title{
+  font-family: "font1";
+  font-size: 23px;
+}
+
+/*Food*/
+.food-info{
+  width: 1200px;
+  max-height: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-top: 90px;
+}
+
+.food-main-title{
+  font-family: "font1";
+  text-align: center;
+}
+
+.food-txt{
+  text-align: center;
+  padding-top: 20px;
+  font-family: "font2";
+  font-size: 17.5px;
+  line-height: 30px;
+}
+
+.breakfast{
+  width: 100%;
+  max-height: 100%;
+}
+
+.breakfast-in{
+  width: 1200px;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.b-in{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.food-main-head{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: "font1";
+}
+
+.food-head{
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+  font-weight: bold;
+  font-family: "font1";
+}
+
+.food-in-txt{
+  text-align: center;
+  font-family: "font2";
+  font-size: 15.5px;
+  line-height: 23px;
+}
+
+/*Music*/
+.music{
+  width: 1200px;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.music-title{
+  padding-top: 110px;
+  padding-bottom: 20px;
+  font-family: "font1";
+  text-align: center;
+}
+
+.music-txt{
+  text-align: center;
+  padding-bottom: 50px;
+  font-family: "font2";
+  font-size: 17.5px;
+  line-height: 30px;
+}
+
+.music-head{
+  font-size: 23px;
+  font-family: "font1";
+}
+
+.music-desc{
+  font-family: "font2";
+  font-size: 15.5px;
+  line-height: 23px;
+}
